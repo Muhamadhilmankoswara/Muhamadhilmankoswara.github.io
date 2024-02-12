@@ -1,0 +1,391 @@
+body {
+  background-color: #102a3f;
+  opacity: 75%;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background-color: #102a3f;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+.navbar-brand {
+  font-size: 30px;
+}
+
+.firstname {
+  color: white;
+  font-weight: bold;
+}
+
+.lastname {
+  color: tomato;
+}
+
+.nav-link {
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.nav-link:hover {
+  color: tomato;
+  transition: 0.7s;
+}
+
+.nav-link:focus {
+  color: tomato;
+}
+
+.nav-link:after {
+  color: tomato;
+}
+
+.navbar-nav > .nav-item > .active {
+  background-color: tomato;
+  font-weight: bold;
+}
+
+.fa-solid {
+  padding-right: 4px;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  font-size: 9px;
+  border-color: gainsboro;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  border: 2px solid tomato;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 99, 71, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: tomato;
+  transition: ease-in-out 0.7s;
+}
+
+.carousel {
+  background-color: transparent;
+}
+
+.carousel-inner {
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+h5 {
+  color: #fff;
+  font-weight: 600;
+}
+
+.input-group-search {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.search {
+  border: 2px solid white;
+}
+
+.search:focus {
+  box-shadow: 0 0 3px 1px tomato;
+  border: 1px solid tomato;
+}
+
+.game-search {
+  background-color: tomato;
+  border: 2px solid tomato;
+}
+
+.game-search:hover {
+  background-color: rgb(255, 99, 71);
+  box-shadow: none;
+  border: 2px solid tomato;
+}
+
+.fa-solid-search {
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.fa-solid-search:hover {
+  color: hwb(0 13% 87%);
+  transition: 0.5s;
+}
+
+.game-search:focus {
+  outline: none;
+}
+
+.strip {
+  width: 70px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: tomato;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+  color: white;
+  /*font-weight: bold;*/
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cart-text {
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+img {
+  border-radius: 10px;
+}
+
+footer {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.head-footer {
+  font-size: 15px;
+}
+
+.text-footer {
+  color: white;
+  font-size: 13px;
+}
+
+.strip-footer {
+  width: 50px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: tomato;
+}
+
+.card-header {
+  border-bottom: 2px solid tomato;
+}
+
+.form-control-login {
+  border: 1px solid tomato;
+  background-color: tomato;
+}
+
+.form-control-login:focus {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  border: 1px solid transparent;
+}
+
+.input-group-text-login {
+  border: 1px solid tomato;
+  background-color: tomato;
+}
+
+.form-control-input {
+  border: 1px solid tomato;
+  border-left: none;
+}
+
+.form-control-input:focus {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  border: 1px solid transparent;
+}
+
+.input-group-text-register {
+  border: 1px solid tomato;
+  background-color: tomato;
+}
+
+.input-group-text-invoice {
+  border: 1px solid tomato;
+  background-color: white;
+}
+
+.form-control-register {
+  border: 1px solid tomato;
+  background-color: white;
+  border-left: none;
+}
+
+.form-control-register:focus {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  border: 1px solid transparent;
+}
+
+.forget-password {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.forget-password > a {
+  color: tomato;
+}
+
+.btn-register {
+  background-color: rgb(255, 99, 71);
+  font-weight: 600;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  color: black;
+}
+
+.btn-register:hover {
+  box-shadow: 0 0 6px 2px rgba(255, 99, 71, 0.9);
+}
+
+.btn-register:focus {
+  outline: none;
+}
+
+.btn-login {
+  background-color: tomato;
+  font-weight: 600;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  color: black;
+}
+
+.btn-login:hover {
+  box-shadow: 0 0 6px 2px rgba(255, 99, 71, 0.9);
+}
+
+.btn-login:focus {
+  outline: none;
+}
+
+.dont-have-account {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.dont-have-account > a {
+  color: tomato;
+}
+
+.btn-check-invoice {
+  background-color: white;
+  font-weight: 600;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  color: black;
+}
+
+.btn-check-invoice:hover {
+  box-shadow: 0 0 6px 2px rgba(255, 99, 71, 0.9);
+}
+
+.btn-check-invoice:focus {
+  outline: none;
+}
+/* register-page */
+
+.form-check-inline {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.container-form-gender {
+  border-radius: 7px;
+  border-bottom: 1px solid tomato;
+}
+
+.form-check-input:focus {
+}
+
+.form-check-input:checked {
+  background-color: tomato;
+  box-shadow: 0 0 3px 2px rgba(255, 99, 71, 0.8);
+  border: none;
+}
+
+.card-contact-us {
+  font-weight: normal;
+}
+
+.active-cs {
+  border-radius: 5px;
+  background-color: tomato;
+  color: black;
+}
+
+.form-select-contact-us {
+  border: 1px solid tomato;
+}
+
+.form-select-contact-us::after {
+}
+
+.form-select-contact-us:focus {
+  box-shadow: 0 0 3px 2px rgba(255, 99, 71, 0.8);
+  outline: none;
+  border: 1px solid tomato;
+}
+
+.option-select {
+  background-color: tomato;
+}
+
+a > img:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.8);
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.nav-link-cs {
+  background-color: transparent;
+  color: white;
+  box-shadow: 0 0 6px 2px rgba(255, 99, 71, 0.9);
+  border-radius: 5px;
+  font-size: 13px;
+}
+.nav-link-cs:hover {
+  color: tomato;
+  transition: 0.7s;
+  box-shadow: 0 0 8px 3px rgba(255, 99, 71, 0.9);
+}
+
+.fa-headset {
+  font-size: 19px;
+}
+
+.nav-item-cs > .nav-link:hover {
+  color: tomato;
+  box-shadow: 0 0 10px 2px rgba(255, 99, 71, 0.9);
+}
+
+.box-select > select {
+  color: #636c72;
+}
+
+.box-select > select::after {
+  background-color: red;
+}
+
+option {
+  color: black;
+  background-color: tomato;
+}
+
+.option-selected {
+  background-color: white;
+  color: #636c72;
+}
+
+.message {
+  background-color: transparent;
+  max-width: 40%;
+  transition: ease-in-out;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 0 10px 2px rgba(255, 99, 71, 0.9);
+}

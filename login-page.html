@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - DiamondStore</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- costume css-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbar sticky-top navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-flex" href="index.html"
+          ><span class="firstname text-left">Diamond</span>
+          <span class="lastname">Store</span></a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse text-right"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                ><i class="fa-solid fa-house-chimney"></i>Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="login-page.html"
+                ><i class="fa-sharp fa-solid fa-right-to-bracket"></i>Login</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="check-invoice.html"
+                ><i class="fa-solid fa-magnifying-glass"></i>Check Invoice</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><i class="fa-solid fa-calculator"></i>
+                Calculator ML
+              </a>
+              <ul class="dropdown-menu mb-3">
+                <li><a class="dropdown-item" href="#">Hitung WR ML</a></li>
+                <li><a class="dropdown-item" href="#">HP Magic Wheel</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">HP Zodiac</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item-cs mx-auto my-auto">
+              <a
+                class="nav-link-cs py-auto pt-2 pb-1 px-2 mx-auto my-auto"
+                href="contact-us.html"
+                ><i class="fa-solid fa-headset p-0 m-0"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- main -->
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-4">
+          <div class="card px-3">
+            <div class="card-header p-3 text-center">
+              <h2 class="card-title m-0 d-flex justify-content-center">
+                <span class="firstname text-left">Diamond</span>
+                <span class="lastname">Store</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="mt-2">
+                <label for="user" class="form-label">Username</label>
+                <br />
+                <label for="user" class="form-label w-100"
+                  ><div class="input-group mb-2">
+                    <span
+                      class="input-group-text input-group-text-login"
+                      id="basic-addon1"
+                      ><i class="fa-solid fa-user"></i
+                    ></span>
+                    <input
+                      type="text"
+                      class="form-control form-control-login"
+                      id="user"
+                      placeholder=""
+                    /></div
+                ></label>
+              </div>
+
+              <div class="mt-2">
+                <label for="password" class="form-label">Password</label>
+                <br />
+                <label for="password" class="form-label w-100"
+                  ><div class="input-group mb-0">
+                    <span
+                      class="input-group-text input-group-text-login"
+                      id="basic-addon1"
+                      ><i class="fa-solid fa-lock"></i
+                    ></span>
+                    <input
+                      type="password"
+                      class="form-control form-control-login"
+                      id="password"
+                      placeholder=""
+                    /></div
+                ></label>
+              </div>
+
+              <p class="forget-password mt-0">
+                Forgot Your Password? <a href=""> click here</a>
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-center px-2">
+                <button class="btn btn-login mt-2 me-md-2" type="button">
+                  <i class="fa-sharp fa-solid fa-right-to-bracket"></i>Login
+                </button>
+              </div>
+              <p class="dont-have-account text-center mt-2 mx-1">
+                Don't have an account?
+                <a href="register-page.html"> Register here</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row p-0">
+          <!-- footer brand -->
+          <div class="col-lg-5 p-4">
+            <h5 class="head-footer d-flex m-0">
+              <span class="firstname text-left">Diamond</span>
+              <span class="lastname">Store</span>
+            </h5>
+            <div class="strip-footer mb-2"></div>
+            <p class="text-footer">
+              Supplier top up game & voucher terlaris, murah, tercepat, aman
+              legal 100% buka 24 jam dengan payment terlengkap Indonesia. Jika
+              ada kendala silahkan klik logo CS pada kanan atas di website ini.
+            </p>
+          </div>
+          <!-- footer partnership -->
+          <div class="col-lg-2 p-4">
+            <h5 class="head-footer m-0">Partnership</h5>
+            <div class="strip-footer mb-2"></div>
+            <ul class="navbar-nav text-footer">
+              <li class="nav-item">
+                <a class="nav-link p-0" href="login-page.html"
+                  ><i class="fas fa-angle-right me-1"></i>Join Reseler</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0" href="login-page.html"
+                  ><i class="fas fa-angle-right me-1"></i>Dashbord</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0" href="login-page.html"
+                  ><i class="fas fa-angle-right me-1"></i>Deposit</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0" href="login-page.html"
+                  ><i class="fas fa-angle-right me-1"></i>Price List</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- footer site-map -->
+          <div class="col-lg-2 p-4">
+            <h5 class="head-footer m-0">Site Map</h5>
+            <div class="strip-footer mb-2"></div>
+            <ul class="navbar-nav text-footer">
+              <li class="nav-item">
+                <a class="nav-link p-0" href="index.html"
+                  ><i class="fas fa-angle-right me-1"></i>Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0" href="login-page.html"
+                  ><i class="fas fa-angle-right me-1"></i>Login</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0" href="check-invoice.html"
+                  ><i class="fas fa-angle-right me-1"></i>Check</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0" href="contact-us.html"
+                  ><i class="fas fa-angle-right me-1"></i>Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- footer chat-us -->
+          <div class="col-lg-2 p-4">
+            <h5 class="head-footer m-0">Chat Us</h5>
+            <div class="strip-footer mb-2"></div>
+            <ul class="navbar-nav text-footer">
+              <li class="nav-item">
+                <a class="nav-link p-0" href="https://web.whatsapp.com/"
+                  ><i class="fas fa-angle-right me-1"></i
+                  ><i class="fa-brands fa-whatsapp me-1"></i>Whatsapp</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0" href="https://www.instagram.com/"
+                  ><i class="fas fa-angle-right me-1"></i
+                  ><i class="fa-brands fa-instagram me-1"></i>Instagram</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0" href="https://desktop.telegram.org/"
+                  ><i class="fas fa-angle-right me-1"></i
+                  ><i class="fa-brands fa-telegram me-1"></i>Telegram</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0" href="https://line.me/id/"
+                  ><i class="fas fa-angle-right me-1"></i
+                  ><i class="fa-brands fa-line me-1"></i>Line</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link p-0"
+                  href="https://accounts.google.com/v3/signin/identifier?dsh=S1443218314%3A1679583278968918&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AWnogHcIIxoY3MqKgkGKg0e0LoxsAtHo3zDhfae6_vopkVj-E35OBnbSXase4B4BGIRrVUsh1F_xYw&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                  ><i class="fas fa-angle-right me-1"></i
+                  ><i class="fa-solid fa-envelope me-1"></i>Email Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
