@@ -341,6 +341,12 @@ a > img:hover {
   transition: 0.5s;
 }
 
+.baru:hover {
+  box-shadow: 0 0 8px 2px tomato;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
 .nav-link-cs {
   background-color: transparent;
   color: white;
